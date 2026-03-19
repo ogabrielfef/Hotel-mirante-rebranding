@@ -5,11 +5,25 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Wifi, Tv, Thermometer, Bath, Users, Sofa, Microwave, ChefHat, Refrigerator, Laptop, ChevronLeft, ChevronRight, ArrowRight, Check, Coffee, Sparkles, Shield, MapPin } from "lucide-react";
 
-import roomComfortable from "../../../public/room-comfortable.jpg";
-import roomSuite from "../../../public/room-suite.jpg";
-import roomTriple from "../../../public/room-triple.jpg";
-import roomDouble from "../../../public/room-double.jpg";
-import bathroom from "../../../public/bathroom.jpg";
+import quartoStandard from "../../app/assets/quarto-standard-1.jpg";
+import quartoStandardFotoDois from "../../app/assets/quarto-standard-2.jpg";
+import banheiroQuartoStandard from "../../app/assets/banheiro-standard-1.jpg";
+import quartoStandardDois from "../../app/assets/quarto-standard-dois-1.jpg";
+import quartoStandardDoisFotoDois from "../../app/assets/quarto-standard-dois-2.jpg";
+import banheiroQuartoStandardDois from "../../app/assets/banheiro-standard-dois.jpg";
+import quartoSuite from "../../app/assets/quarto-suite-um.jpg";
+import quartoSuiteFotoDois from "../../app/assets/quarto-suite-um(2).jpg";
+import quartoSuiteDois from "../../app/assets/quarto-suite-dois.jpg";
+import quartoSuiteDoisFotoDois from "../../app/assets/quarto-suite-dois(2).jpg";
+import banheiroQuartoSuite from "../../app/assets/banheiro-suite.jpg";
+import quartoFlat from "../../app/assets/quarto-flat.jpg";
+import salaFlat from "../../app/assets/sala-flat.jpg";
+import cozinhaFlat from "../../app/assets/cozinha-flat.jpg";
+import banheiroFlat from "../../app/assets/banheiro-flat.jpg";
+// import roomSuite from "../../../public/room-suite.jpg";
+// import roomTriple from "../../../public/room-triple.jpg";
+// import roomDouble from "../../../public/room-double.jpg";
+// import bathroom from "../../../public/bathroom.jpg";
 import Image from "next/image";
 
 const rooms = [
@@ -17,7 +31,7 @@ const rooms = [
     id: 1,
     name: "Quarto Standard",
     description: "Ideal para casais ou viajantes solo. Ambiente aconchegante com tudo que você precisa para uma estadia tranquila em Careaçu.",
-    images: [roomComfortable, bathroom, roomDouble],
+    images: [quartoStandard, banheiroQuartoStandard, quartoStandardFotoDois],
     capacity: "2 pessoas",
     amenities: [
       { icon: Wifi, label: "Wi-Fi" },
@@ -33,7 +47,7 @@ const rooms = [
     id: 2,
     name: "Quarto Standard 2",
     description: "Mais espaço e conforto para quem busca uma hospedagem especial. Área de estar separada para maior privacidade.",
-    images: [roomSuite, bathroom, roomComfortable],
+    images: [quartoStandardDois, banheiroQuartoStandardDois, quartoStandardDoisFotoDois],
     capacity: "2-4 pessoas",
     amenities: [
       { icon: Wifi, label: "Wi-Fi" },
@@ -44,13 +58,13 @@ const rooms = [
       { icon: Laptop, label: "Mesa para trabalho" },
       { icon: Sofa, label: "Área de estar" },
     ],
-    highlight: "Melhor Custo-Benefício",
+    // highlight: "Melhor Custo-Benefício",
   },
   {
     id: 3,
     name: "Suíte",
     description: "Perfeito para famílias ou estadias prolongadas. Acomodação completa com cozinha equipada e todo o conforto de casa.",
-    images: [roomTriple, bathroom, roomSuite],
+    images: [quartoSuite, banheiroQuartoSuite, quartoSuiteFotoDois],
     capacity: "Até 4 pessoas",
     amenities: [
       { icon: Wifi, label: "Wi-Fi" },
@@ -67,7 +81,7 @@ const rooms = [
     id: 4,
     name: "Suíte 2",
     description: "Perfeito para famílias ou estadias prolongadas. Acomodação completa com cozinha equipada e todo o conforto de casa.",
-    images: [roomTriple, bathroom, roomSuite],
+    images: [quartoSuiteDois, banheiroQuartoSuite, quartoSuiteDoisFotoDois],
     capacity: "Até 4 pessoas",
     amenities: [
       { icon: Wifi, label: "Wi-Fi" },
@@ -78,13 +92,13 @@ const rooms = [
       { icon: Sofa, label: "Área de estar" },
       { icon: ChefHat, label: "Cozinha" },
     ],
-    highlight: "Ideal para Famílias",
+    // highlight: "Ideal para Famílias",
   },
   {
     id: 5,
     name: "Flat",
     description: "Perfeito para famílias ou estadias prolongadas. Acomodação completa com cozinha equipada e todo o conforto de casa.",
-    images: [roomTriple, bathroom, roomSuite],
+    images: [quartoFlat, salaFlat, cozinhaFlat, banheiroFlat],
     capacity: "Até 4 pessoas",
     amenities: [
       { icon: Wifi, label: "Wi-Fi" },
@@ -95,7 +109,7 @@ const rooms = [
       { icon: Sofa, label: "Área de estar" },
       { icon: ChefHat, label: "Cozinha" },
     ],
-    highlight: "Ideal para Famílias",
+    // highlight: "Ideal para Famílias",
   },
 ];
 
@@ -206,7 +220,7 @@ const RoomCard = ({ room, onReserve }: { room: typeof rooms[0]; onReserve: (name
 const Quartos = () => {
   const handleReserve = (roomName: string) => {
     window.open(
-      `https://wa.me/5500000000000?text=Olá, gostaria de fazer uma reserva no ${roomName} do Hotel Mirante em Careaçu`,
+      `https://wa.me/553531350135?text=Olá, gostaria de fazer uma reserva no ${roomName} do Hotel Mirante em Careaçu`,
       "_blank"
     );
   };

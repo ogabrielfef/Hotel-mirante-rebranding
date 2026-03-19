@@ -295,7 +295,7 @@ const Localizacao = () => {
                   {[
                     { icon: Star, label: "Bem Avaliado" },
                     { icon: CheckCircle, label: "Estrutura Nova" },
-                    { icon: Coffee, label: "Café Incluso" },
+                    { icon: Coffee, label: "Café da manhã" },
                   ].map((item, index) => {
                     const Icon = item.icon;
                     return (

@@ -2,12 +2,12 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ZoomIn } from "lucide-react";
-import roomImage from "../../../public/room-comfortable.jpg";
+import roomImage from "../../app/assets/quarto-suite-um.jpg";
 import receptionImage from "../../../public/reception.jpg";
 import breakfastImage from "../../../public/breakfast.jpg";
 import commonAreaImage from "../../../public/common-area.jpg";
 import heroImage from "../../../public/hero-hotel.jpg";
-import roomDoubleImage from "../../../public/room-double.jpg";
+import roomDoubleImage from "../../app/assets/quarto-flat.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,7 +17,7 @@ const galleryImages = [
   { src: breakfastImage, alt: "Café da manhã", category: "Serviços" },
   { src: commonAreaImage, alt: "Área comum", category: "Áreas Comuns" },
   { src: heroImage, alt: "Fachada do Hotel", category: "Externo" },
-  { src: roomDoubleImage, alt: "Quarto duplo", category: "Quartos" },
+  { src: roomDoubleImage, alt: "Quarto espaçoso", category: "Quartos" },
 ];
 
 const Gallery = () => {

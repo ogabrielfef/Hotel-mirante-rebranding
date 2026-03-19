@@ -2,36 +2,38 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wifi, Coffee, Car, Thermometer, Users, Sparkles, Check } from "lucide-react";
-import roomComfortable from "../../../public/room-comfortable.jpg";
-import roomSuite from "../../../public/room-suite.jpg";
-import roomTriple from "../../../public/room-triple.jpg";
+import quartoStandard from "../../app/assets/quarto-standard-1.jpg";
+import quartoStandardDois from "../../app/assets/quarto-standard-dois-1.jpg";
+import quartoSuite from "../../app/assets/quarto-suite-um.jpg";
+import quartoSuiteDois from "../../app/assets/quarto-suite-dois.jpg";
+import flat from "../../app/assets/quarto-flat.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
 const rooms = [
   {
     name: "Standard",
-    image: roomComfortable,
+    image: quartoStandard,
     capacity: "2 pessoas",
   },
   {
     name: "Standard 2",
-    image: roomSuite,
+    image: quartoStandardDois,
     capacity: "2-4 pessoas",
   },
   {
     name: "Suíte",
-    image: roomTriple,
+    image: quartoSuite,
     capacity: "Até 4 pessoas",
   },
   {
     name: "Suíte 2",
-    image: roomTriple,
+    image: quartoSuiteDois,
     capacity: "Até 4 pessoas",
   },
   {
     name: "Flat",
-    image: roomTriple,
+    image: flat,
     capacity: "Até 4 pessoas",
   },
 ];

@@ -1,11 +1,9 @@
 import "./globals.css"
 import type { ReactNode } from "react"
-import { getBaseMetadata } from "@/lib/seo/metadata"
 
 import Header from "@/components/layout/Header"
 import Footer from "@/components/layout/Footer"
-
-export const metadata = getBaseMetadata()
+import WhatsAppButton from "@/components/layout/WhatsAppButton"
 
 export default function RootLayout({
   children,
@@ -19,6 +17,7 @@ export default function RootLayout({
 
         <main className="flex-1">{children}</main>
 
+        <WhatsAppButton/>
         <Footer />
       </body>
     </html>

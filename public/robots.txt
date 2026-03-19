@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://miranteparquehotel.com.br/
+
+# Sitemaps
+Sitemap: https://miranteparquehotel.com.br/sitemap.xml
